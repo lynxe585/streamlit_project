@@ -7,12 +7,13 @@
 2. Tirawat Kongjinda     6810412005
 
 ## Content 
--  [***Issues and Motivation***]
--  [***Objective***]
--  [***Solution***]
--  [***System Pipeline Architecture***]
--  [***Solution & Methodology***]
--  [***Visualizations***]
+-  [***Issues and Motivation***](https://github.com/lynxe585/streamlit_project/tree/main#-issues--motivation)
+-  [***Objective***](https://github.com/lynxe585/streamlit_project/tree/main#-objectives)
+-  [***Solution***](https://github.com/lynxe585/streamlit_project/tree/main#%EF%B8%8F-tech-stack--architecture)
+-  [***System Pipeline Architecture***](https://github.com/lynxe585/streamlit_project/tree/main#%EF%B8%8F-tech-stack--architecture)
+-  [***Solution & Methodology***](https://github.com/lynxe585/streamlit_project/tree/main#%EF%B8%8F-tech-stack--architecture)
+-  [***Visualizations***](https://github.com/lynxe585/streamlit_project/tree/main#%EF%B8%8F-tech-stack--architecture)
+-  [***Tutorial using streamlit***]
 
 
 
@@ -99,3 +100,7 @@ graph TD
 * **Amount Anomaly Plots (Plotly Box/Violin Plots):** Exposes statistical outliers by comparing normal transaction ranges with flagged transactions.
 * **Circular Loop Network Graph:** Illustrates nodes in a circular transaction flow (red nodes denote loop participants, and line thickness indicates transfer sizes).
 * **Sankey Money Flow Diagram (Plotly Sankey):** Maps the distribution of fund flows from the investigated account to various counterparties. Flow lines are color-coded based on risk scores (Red for high-risk $\ge$ 70%, Amber for medium, Blue for low).
+
+
+## 🚨 Tutorial Using Streamlit
+
