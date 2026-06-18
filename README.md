@@ -9,9 +9,9 @@
 ## Content 
 -  [***Issues and Motivation***](https://github.com/lynxe585/streamlit_project/tree/main#-issues--motivation)
 -  [***Objectives***](https://github.com/lynxe585/streamlit_project/tree/main#-objectives)
--  [***System Pipeline Architecture***](https://github.com/lynxe585/streamlit_project/tree/main#%EF%B8%8F-tech-stack--architecture)
+-  [***System Pipeline Architecture***](https://github.com/lynxe585/streamlit_project/tree/main#-tech-stack--architecture)
 -  [***Solution & Methodology***](https://github.com/lynxe585/streamlit_project/tree/main#-solution--methodology)
--  [***Visualizations***](https://github.com/lynxe585/streamlit_project/tree/main#%EF%B8%8F-tech-stack--architecture)
+-  [***Visualizations***](https://github.com/lynxe585/streamlit_project/tree/main#-visualizations)
 -  [***Tutorial using streamlit***](https://github.com/lynxe585/streamlit_project/tree/main#-tutorial-using-streamlit) 
 
 
@@ -72,6 +72,7 @@ graph TD
     GM -->|SAR & Chat Answers| ST
     ST -->|Audit Logs & SAR History| MG_AUDIT
 ```
+
 ## 💡 Solution & Methodology
 
 ### 1. Non-AI Engine (Engineering & Statistics)
