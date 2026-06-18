@@ -9,7 +9,6 @@
 ## Content 
 -  [***Issues and Motivation***](https://github.com/lynxe585/streamlit_project/tree/main#-issues--motivation)
 -  [***Objectives***](https://github.com/lynxe585/streamlit_project/tree/main#-objectives)
--  [***Solution***](https://github.com/lynxe585/streamlit_project/tree/main#%EF%B8%8F-tech-stack--architecture)
 -  [***System Pipeline Architecture***](https://github.com/lynxe585/streamlit_project/tree/main#%EF%B8%8F-tech-stack--architecture)
 -  [***Solution & Methodology***](https://github.com/lynxe585/streamlit_project/tree/main#%EF%B8%8F-tech-stack--architecture)
 -  [***Visualizations***](https://github.com/lynxe585/streamlit_project/tree/main#%EF%B8%8F-tech-stack--architecture)
