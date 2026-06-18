@@ -43,7 +43,7 @@ In today’s highly digitized and borderless economy, financial crimes have evol
 | **OLAP Engine** | [DuckDB](https://duckdb.org/) | In-memory vectorized processing for lightning-fast SQL queries |
 | **Warehouse** | [Snowflake](https://www.snowflake.com/) | Cloud data warehouse sourcing historical fraud data |
 | **Live Database** | [MongoDB Atlas](https://www.mongodb.com/) | Live NoSQL store for Blacklist feeds, IP/Device mappings, and Audit logs |
-| **GenAI LLM** | [Google Gemma / Gemini](https://ai.google.dev/) | Contextual SAR generator and database-centric Q&A Chatbot |
+| **GenAI LLM** | [Google Gemma](https://ai.google.dev/) | Contextual SAR generator and database-centric Q&A Chatbot |
 | **Visualization**| [Plotly](https://plotly.com/) | Dynamic charts, geospatial bubble maps, and money flow diagrams |
 | **Processing** | Pandas & NumPy | High-performance data wrangling and mathematical risk indexing |
 
@@ -60,7 +60,7 @@ graph TD
         PD[Pandas & NumPy]
     end
     subgraph Intelligence & UI
-        GM[Google Gemma/Gemini]
+        GM[Google Gemma]
         ST[Streamlit App]
         MG_AUDIT[(MongoDB Audit Logs)]
     end
