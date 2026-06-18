@@ -13,7 +13,7 @@
 -  [***System Pipeline Architecture***](https://github.com/lynxe585/streamlit_project/tree/main#%EF%B8%8F-tech-stack--architecture)
 -  [***Solution & Methodology***](https://github.com/lynxe585/streamlit_project/tree/main#%EF%B8%8F-tech-stack--architecture)
 -  [***Visualizations***](https://github.com/lynxe585/streamlit_project/tree/main#%EF%B8%8F-tech-stack--architecture)
--  [***Tutorial using streamlit***] 
+-  [***Tutorial using streamlit***](https://github.com/lynxe585/streamlit_project/tree/main#-tutorial-using-streamlit) 
 
 
 
