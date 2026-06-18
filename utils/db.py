@@ -4,7 +4,11 @@ import numpy as np
 import duckdb
 import os
 import random
+import threading
 from datetime import datetime, timedelta
+
+# Lock to prevent race conditions during concurrent database initialization
+db_init_lock = threading.Lock()
 
 # ---------------------------------------------------------
 # Database Connection Functions (Cached with @st.cache_resource)
@@ -652,39 +656,40 @@ def initialize_database(dataset_name="All Sources", force_reload=False, use_clou
     """
     Registers transactions and blacklist tables in the DuckDB session.
     """
-    conn = get_duckdb_connection()
-    tables = conn.execute("SHOW TABLES").fetchall()
-    table_names = [t[0] for t in tables]
+    with db_init_lock:
+        conn = get_duckdb_connection()
+        tables = conn.execute("SHOW TABLES").fetchall()
+        table_names = [t[0] for t in tables]
 
-    if force_reload:
-        if "transactions" in table_names:
-            conn.execute("DROP TABLE transactions")
-            table_names.remove("transactions")
-        if "blacklist" in table_names:
-            conn.execute("DROP TABLE blacklist")
-            table_names.remove("blacklist")
+        if force_reload:
+            if "transactions" in table_names:
+                conn.execute("DROP TABLE IF EXISTS transactions")
+                table_names.remove("transactions")
+            if "blacklist" in table_names:
+                conn.execute("DROP TABLE IF EXISTS blacklist")
+                table_names.remove("blacklist")
 
-    if "transactions" not in table_names:
-        df_txn = get_transactions_data(use_cloud=use_cloud, dataset_name=dataset_name)
-        conn.register("df_transactions", df_txn)
-        conn.execute("CREATE TABLE transactions AS SELECT * FROM df_transactions")
-        try:
-            conn.execute("CREATE INDEX idx_txn_id ON transactions (transaction_id)")
-            conn.execute("CREATE INDEX idx_sender ON transactions (sender_id)")
-            conn.execute("CREATE INDEX idx_receiver ON transactions (receiver_id)")
-        except Exception:
-            pass
+        if "transactions" not in table_names:
+            df_txn = get_transactions_data(use_cloud=use_cloud, dataset_name=dataset_name)
+            conn.register("df_transactions", df_txn)
+            conn.execute("CREATE TABLE IF NOT EXISTS transactions AS SELECT * FROM df_transactions")
+            try:
+                conn.execute("CREATE INDEX idx_txn_id ON transactions (transaction_id)")
+                conn.execute("CREATE INDEX idx_sender ON transactions (sender_id)")
+                conn.execute("CREATE INDEX idx_receiver ON transactions (receiver_id)")
+            except Exception:
+                pass
 
-    if "blacklist" not in table_names:
-        df_black = load_blacklist_data()
-        conn.register("df_blacklist", df_black)
-        conn.execute("CREATE TABLE blacklist AS SELECT * FROM df_blacklist")
-        try:
-            conn.execute("CREATE INDEX idx_black_acc ON blacklist (account_id)")
-        except Exception:
-            pass
+        if "blacklist" not in table_names:
+            df_black = load_blacklist_data()
+            conn.register("df_blacklist", df_black)
+            conn.execute("CREATE TABLE IF NOT EXISTS blacklist AS SELECT * FROM df_blacklist")
+            try:
+                conn.execute("CREATE INDEX idx_black_acc ON blacklist (account_id)")
+            except Exception:
+                pass
 
-    return conn
+        return conn
 
 
 # ---------------------------------------------------------
