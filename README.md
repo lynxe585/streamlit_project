@@ -102,5 +102,5 @@ graph TD
 * **Sankey Money Flow Diagram (Plotly Sankey):** Maps the distribution of fund flows from the investigated account to various counterparties. Flow lines are color-coded based on risk scores (Red for high-risk $\ge$ 70%, Amber for medium, Blue for low).
 
 
-## 🚨 Tutorial Using Streamlit
+## 🎬 Tutorial Using Streamlit
 
