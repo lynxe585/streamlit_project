@@ -2,6 +2,13 @@
 > **Real-time Graph Analytics & Intelligent Data Pipeline Integrated with a GenAI-Powered Forensic Copilot.**
 > Designed for Financial Intelligence Units (FIUs), risk compliance officers, and cybersecurity teams to detect, trace, and investigate complex financial crimes.
 
+## 📺 Demo / วิดีโอสาธิตการทำงาน
+
+สามารถรับชมวิดีโออธิบายการทำงานของแอปพลิเคชันได้ที่นี่:
+[ชมวิดีโอบน YouTube](https://youtu.be/frMWkFCovSw)
+
+
+
 ### Members
 1. Thiti Chaiwiwatthanan 6810412003
 2. Tirawat Kongjinda     6810412005
