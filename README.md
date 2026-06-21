@@ -2,10 +2,10 @@
 > **Real-time Graph Analytics & Intelligent Data Pipeline Integrated with a GenAI-Powered Forensic Copilot.**
 > Designed for Financial Intelligence Units (FIUs), risk compliance officers, and cybersecurity teams to detect, trace, and investigate complex financial crimes.
 
-## 📺 Demo / วิดีโอสาธิตการทำงาน
+## 📺 Video Demo
 
-สามารถรับชมวิดีโออธิบายการทำงานของแอปพลิเคชันได้ที่นี่:
-[ชมวิดีโอบน YouTube](https://youtu.be/frMWkFCovSw)
+[![Financial Fraud & Scam Detection Network](https://img.youtube.com/vi/frMWkFCovSw/maxresdefault.jpg)](https://youtu.be/frMWkFCovSw)
+
 
 
 
