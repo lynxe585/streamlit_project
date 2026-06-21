@@ -2,13 +2,6 @@
 > **Real-time Graph Analytics & Intelligent Data Pipeline Integrated with a GenAI-Powered Forensic Copilot.**
 > Designed for Financial Intelligence Units (FIUs), risk compliance officers, and cybersecurity teams to detect, trace, and investigate complex financial crimes.
 
-## 📺 Video Demo
-
-[![Financial Fraud & Scam Detection Network](https://img.youtube.com/vi/frMWkFCovSw/maxresdefault.jpg)](https://youtu.be/frMWkFCovSw)
-
-
-
-
 ### Members
 1. Thiti Chaiwiwatthanan 6810412003
 2. Tirawat Kongjinda     6810412005
