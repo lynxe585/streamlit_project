@@ -1,5 +1,5 @@
 # 📺 วิดีโอสาธิตการทำงานของโปรเจค
 
-[![Financial Fraud Demo](https://img.youtube.com/vi/frMWkFCovSw/maxresdefault.jpg)](https://youtu.be/frMWkFCovSw)
-
-คลิกที่รูปภาพเพื่อรับชมวิดีโอบน YouTube (แนะนำให้คลิกขวา -> Open link in new tab)
+สามารถรับชมวิดีโออธิบายการทำงานของแอปพลิเคชันได้ที่นี่:
+[ชมวิดีโอบน YouTube](https://youtu.be/frMWkFCovSw)
+(แนะนำให้คลิกขวา -> Open link in new tab)
